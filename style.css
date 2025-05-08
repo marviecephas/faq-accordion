@@ -88,10 +88,10 @@ p{
         background:url('background-pattern-desktop.svg');
     }
     .content-container{
-        width:500px;
+        width:600px;
     }
     .sub-content-container, .content-header{
-        width:400px;
+        width:550px;
     }
     .content-heading{
         max-width:350px;
