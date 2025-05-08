@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', function(){
         return answerHeight;
     }
     const toggleAnswer = (questionIcon) => {
-        questionIcon.parentNode.nextElementSibling.style.display = (questionIcon.src === "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-plus.svg") ? "block" : "none";
+        questionIcon.parentNode.nextElementSibling.style.display = (questionIcon.src === "icon-plus.svg") ? "block" : "none";
         
-        questionIcon.src = (questionIcon.src == "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-plus.svg") ? "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-minus.svg" : "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-plus.svg";
+        questionIcon.src = (questionIcon.src == "icon-plus.svg") ? "icon-minus.svg" : "icon-plus.svg";
         
         let answerHeightToAdd = 0, answerHeightToRemove = 0, height = 0, totalHeight = 0;
         height = getHeight(questionIcon.parentNode.nextElementSibling);
         
-        answerHeightToAdd = ((questionIcon.src === "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-minus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "block")) ? height : 0;
+        answerHeightToAdd = ((questionIcon.src === "icon-minus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "block")) ? height : 0;
         
-        answerHeightToRemove = ((questionIcon.src === "file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit%20user%20files/faq-accordion/icon-plus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "none")) ? -1 * height : 0;
+        answerHeightToRemove = ((questionIcon.src === "icon-plus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "none")) ? -1 * height : 0;
          
         totalHeight = body.offsetHeight + answerHeightToAdd + answerHeightToRemove;  
         body.style.minHeight = `${totalHeight}px`;       
