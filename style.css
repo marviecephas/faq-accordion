@@ -1,4 +1,4 @@
-*{
+I'm*{
     padding:0;
     margin:0;
     font-family:"Work Sans", sans-serif;
@@ -88,10 +88,10 @@ p{
         background:url('background-pattern-desktop.svg');
     }
     .content-container{
-        width:600px;
+        width:700px;
     }
     .sub-content-container, .content-header{
-        width:550px;
+        width:650px;
     }
     .content-heading{
         max-width:350px;
