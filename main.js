@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', function(){
         return answerHeight;
     }
     const toggleAnswer = (questionIcon) => {
-        questionIcon.parentNode.nextElementSibling.style.display = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") ? "block" : "none";
+        questionIcon.parentNode.nextElementSibling.style.display = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/e7cfeaf21c5997db36452c375eb2079216adb260/icon-plus.svg") ? "block" : "none";
         
-        questionIcon.src = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") ? "https://github.com/marviecephas/faq-accordion/blob/main/icon-minus.svg" : "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg";
+        questionIcon.src = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/e7cfeaf21c5997db36452c375eb2079216adb260/icon-plus.svg") ? "https://github.com/marviecephas/faq-accordion/blob/main/icon-minus.svg" : "https://github.com/marviecephas/faq-accordion/blob/e7cfeaf21c5997db36452c375eb2079216adb260/icon-plus.svg";
         
         let answerHeightToAdd = 0, answerHeightToRemove = 0, height = 0, totalHeight = 0;
         height = getHeight(questionIcon.parentNode.nextElementSibling);
         
         answerHeightToAdd = ((questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-minus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "block")) ? height : 0;
         
-        answerHeightToRemove = ((questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "none")) ? -1 * height : 0;
+        answerHeightToRemove = ((questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/e7cfeaf21c5997db36452c375eb2079216adb260/icon-plus.svg") && (questionIcon.parentNode.nextElementSibling.style.display === "none")) ? -1 * height : 0;
          
         totalHeight = body.offsetHeight + answerHeightToAdd + answerHeightToRemove;  
         body.style.minHeight = `${totalHeight}px`;       
