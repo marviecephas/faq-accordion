@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const toggleAnswer = (questionIcon) => {
         questionIcon.parentNode.nextElementSibling.style.display = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") ? "block" : "none";
         
-        questionIcon.src = (questionIcon.src == "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") ? "icon-minus.svg" : "icon-plus.svg";
+        questionIcon.src = (questionIcon.src === "https://github.com/marviecephas/faq-accordion/blob/main/icon-plus.svg") ? "https://github.com/marviecephas/faq-accordion/blob/8fb3a7c0b3fc8fa5039c42d1d65a3d9f2705ccc4/icon-minus.svg" : "https://github.com/marviecephas/faq-accordion/blob/8fb3a7c0b3fc8fa5039c42d1d65a3d9f2705ccc4/icon-plus.svg";
         
         let answerHeightToAdd = 0, answerHeightToRemove = 0, height = 0, totalHeight = 0;
         height = getHeight(questionIcon.parentNode.nextElementSibling);
