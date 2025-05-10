@@ -86,12 +86,13 @@ p{
 @media (min-width:1200px){
     .bg-container{
         background:url('background-pattern-desktop.svg');
+        height:40%;
     }
     .content-container{
-        width:700px;
+        width:550px;
     }
     .sub-content-container, .content-header{
-        width:650px;
+        width:500px;
     }
     .content-heading{
         max-width:350px;
