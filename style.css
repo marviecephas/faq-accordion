@@ -85,6 +85,7 @@ p{
 }
 .header{
     align-self:flex-start;
+    margin-left:20px;
 }
 @media (min-width:1200px){
     .bg-container{
@@ -93,6 +94,7 @@ p{
     }
     .header{
         align-self:flex-start;
+        margin-left:20px;
     }
     .content-container{
         width:550px;
