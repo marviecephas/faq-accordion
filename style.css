@@ -83,24 +83,27 @@ p{
     padding:0;
     border:none;
 }
+.header{
+    align-self:flex-start;
+}
 @media (min-width:1200px){
     .bg-container{
         background:url('background-pattern-desktop.svg');
         height:40%;
     }
     .header{
-        justify-content:flex-start;
+        align-self:flex-start;
     }
     .content-container{
         width:550px;
     }
-    .sub-content-container, .content-heading{
+    .sub-content-container, .content-header{
         width:510px;
     }
     .content-paragraph{
         max-width:510px;
     }
-    .content-header{
+    .content-heading{
         max-width:475px;
     }
 }
