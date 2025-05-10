@@ -89,12 +89,12 @@ p{
         height:40%;
     }
     .content-container{
-        width:550px;
+        width:600px;
     }
     .sub-content-container, .content-header{
-        width:500px;
+        width:550px;
     }
-    .content-heading{
-        max-width:350px;
+    .content-heading, .content-paragraph{
+        max-width:550px;
     }
 }
