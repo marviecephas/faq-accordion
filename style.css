@@ -88,13 +88,19 @@ p{
         background:url('background-pattern-desktop.svg');
         height:40%;
     }
-    .content-container{
-        width:600px;
+    .header{
+        justify-content:flex-start;
     }
-    .sub-content-container, .content-header{
+    .content-container{
         width:550px;
     }
-    .content-heading, .content-paragraph{
-        max-width:550px;
+    .sub-content-container, .content-heading{
+        width:510px;
+    }
+    .content-paragraph{
+        max-width:510px;
+    }
+    .content-header{
+        max-width:475px;
     }
 }
